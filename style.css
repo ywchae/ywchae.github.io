@@ -137,8 +137,8 @@ main { grid-column: 2; }
   padding-block: var(--s-5);
 }
 .name {
-  font-size: clamp(2.5rem, 5vw, 3rem);
-  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 3.5vw, 2.375rem);
+  margin-bottom: 1.5rem;
 }
 .lede {
   font-size: 1.25rem;
@@ -147,7 +147,8 @@ main { grid-column: 2; }
   max-width: var(--measure);
   margin-bottom: var(--s-3);
 }
-.bio { max-width: var(--measure); color: var(--ink-2); font-size: 1.0625rem; margin-top: 0.5rem; }
+.bio { max-width: var(--measure); color: var(--ink-2); font-size: 1.0625rem; }
+.bio strong { font-weight: 600; color: var(--ink); }
 .bio p { margin-bottom: var(--s-2); }
 
 .contact {
