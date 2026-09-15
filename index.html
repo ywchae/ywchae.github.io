@@ -42,9 +42,12 @@
       <a class="brand" href="#top">Yeonu Chae</a>
       <nav class="site-nav" aria-label="Sections">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#talks">Talks</a>
+        <a href="#experience">Experience</a>
         <a href="#teaching">Teaching &amp; Service</a>
         <a href="#cv">CV</a>
       </nav>
@@ -57,21 +60,23 @@
     <section id="about" class="hero wrap">
       <div class="hero-text">
         <h1 class="name">Yeonu Chae</h1>
-        <p class="lede">
-          Ph.D. student in Industrial and Operations Engineering at the University of Michigan,
-          advised by <a href="https://ioe.engin.umich.edu/people/shen-siqian/" rel="noopener">Prof. Siqian Shen</a>.
-        </p>
         <div class="bio">
           <p>
-            I build optimization models for shared mobility systems that have to work under uncertainty.
-            My current projects ask how to plan and operate electric vehicle fleets whose batteries degrade
-            over time, and how to design infrastructure for ride-hailing fleets that mix autonomous and
-            human-driven vehicles.
+            I am a Ph.D. student in Industrial and Operations Engineering at the University of Michigan,
+            advised by <a href="https://ioe.engin.umich.edu/people/shen-siqian/" rel="noopener">Prof. Siqian Shen</a>.
+            My research develops optimization models for shared mobility systems that have to work under
+            uncertainty: planning and operating electric vehicle fleets whose batteries degrade over time, and
+            designing infrastructure for ride-hailing fleets that mix autonomous and human-driven vehicles.
+            I mainly use robust optimization and stochastic programming, with Python and Gurobi for
+            large-scale computation.
           </p>
           <p>
-            I work with robust optimization, stochastic programming, and large-scale computation in Python
-            and Gurobi. Before Michigan, I studied Industrial Engineering and Artificial Intelligence at
-            Seoul National University, where I also worked on deep learning for battery health prediction.
+            Before Michigan, I worked as an optimization engineer at Omelet in Seoul, building demand
+            forecasting and inventory decision-support algorithms for a major convenience-store chain.
+            I received my B.S. in Industrial Engineering and B.S. in Artificial Intelligence from Seoul
+            National University, graduating as valedictorian of Industrial Engineering. There I worked with
+            Prof. Taesup Moon on deep learning for battery health prediction and with Prof. Sungzoon Cho
+            on manufacturing data analysis.
           </p>
         </div>
         <ul class="contact" aria-label="Contact and profiles">
@@ -87,9 +92,73 @@
       </div>
       <figure class="portrait">
         <img src="assets/yeonu.jpg" srcset="assets/yeonu-small.jpg 480w, assets/yeonu.jpg 800w"
-             sizes="(max-width: 720px) 60vw, 360px" width="800" height="1000"
+             sizes="(max-width: 720px) 60vw, 240px" width="800" height="1000"
              alt="Portrait of Yeonu Chae" fetchpriority="high">
       </figure>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section wrap">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2025–</span>
+          <div>
+            <span class="role">Ph.D. in Industrial and Operations Engineering</span>
+            <span class="org">University of Michigan, Ann Arbor · Advisor: Prof. Siqian Shen</span>
+            <span class="meta">GPA 4.00/4.00</span>
+          </div>
+        </li>
+        <li>
+          <span class="when">2020–2025</span>
+          <div>
+            <span class="role">B.S. in Industrial Engineering and B.S. in Artificial Intelligence</span>
+            <span class="org">Seoul National University · Interdisciplinary Major in Artificial Intelligence</span>
+            <span class="meta">Valedictorian, ranked 1st in Industrial Engineering · GPA 3.95/4.00</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- HONORS -->
+    <section id="honors" class="section wrap">
+      <h2>Honors and Awards</h2>
+      <ul class="honors">
+        <li>
+          <span class="when">2026</span>
+          <div><span class="role">Rackham Travel Grant</span><span class="org">Rackham Graduate School, University of Michigan</span></div>
+        </li>
+        <li>
+          <span class="when">2024</span>
+          <div>
+            <span class="role">Finalist, Optimization Grand Challenge</span>
+            <span class="org">Korean Institute of Industrial Engineers. Ranked 4th of more than 370 teams in the first round for an offline vehicle-sharing combinatorial optimization algorithm for food delivery.</span>
+          </div>
+        </li>
+        <li>
+          <span class="when">2024</span>
+          <div>
+            <span class="role">Lee Joong-Han Award, Academic Sector</span>
+            <span class="org">Seoul National University. Awarded annually to one student for academic and research excellence in Industrial Engineering.</span>
+          </div>
+        </li>
+        <li>
+          <span class="when">2023</span>
+          <div><span class="role">Finalist, Space Weather Prediction AI Competition</span><span class="org">National Korea Space Center</span></div>
+        </li>
+        <li>
+          <span class="when">2022–2024</span>
+          <div><span class="role">Kwanjeong Undergraduate Fellowship</span><span class="org">Kwanjeong Educational Foundation</span></div>
+        </li>
+        <li>
+          <span class="when">2022</span>
+          <div><span class="role">SNU Women in Engineering Science Scholarship</span><span class="org">Seoul National University</span></div>
+        </li>
+        <li>
+          <span class="when">2021</span>
+          <div><span class="role">Merit-Based Scholarship</span><span class="org">Seoul National University</span></div>
+        </li>
+      </ul>
     </section>
 
     <!-- RESEARCH -->
@@ -157,14 +226,11 @@
               <path d="M40 170 L90 300"/>
             </g>
             <g class="nodes">
-              <!-- depots: filled squares -->
               <rect class="depot" x="143" y="103" width="14" height="14"/>
               <rect class="depot" x="113" y="193" width="14" height="14"/>
-              <!-- charging stations: hollow circles -->
               <circle class="station" cx="60" cy="60" r="6.5"/>
               <circle class="station" cx="230" cy="180" r="6.5"/>
               <circle class="station" cx="190" cy="290" r="6.5"/>
-              <!-- demand nodes: small filled dots -->
               <circle class="demand" cx="250" cy="70" r="4"/>
               <circle class="demand" cx="40" cy="170" r="4"/>
               <circle class="demand" cx="280" cy="260" r="4"/>
@@ -231,6 +297,41 @@
       </ul>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section wrap">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2025–</span>
+          <div>
+            <span class="role">Graduate Research Assistant, University of Michigan</span>
+            <span class="org">Advisor: Prof. Siqian Shen · Robust optimization models for battery-health-aware EV-sharing infrastructure and mixed-fleet ride-hailing operations; Python/Gurobi pipelines for large-scale network optimization and out-of-sample evaluation.</span>
+          </div>
+        </li>
+        <li>
+          <span class="when">2025</span>
+          <div>
+            <span class="role">Optimization Engineer, Omelet</span>
+            <span class="org">Seoul · Jan–Jul 2025. Optimization algorithms for demand forecasting and inventory-control decision support for a major convenience-store client.</span>
+          </div>
+        </li>
+        <li>
+          <span class="when">2023–</span>
+          <div>
+            <span class="role">Research Assistant, Seoul National University</span>
+            <span class="org">Advisor: Prof. Taesup Moon · Deep learning for battery remaining-useful-life prediction.</span>
+          </div>
+        </li>
+        <li>
+          <span class="when">2023</span>
+          <div>
+            <span class="role">Research Assistant, Seoul National University</span>
+            <span class="org">Advisor: Prof. Sungzoon Cho · Clustering-based framework for categorical-variable selection in manufacturing data.</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <!-- TEACHING & SERVICE -->
     <section id="teaching" class="section wrap">
       <h2>Teaching &amp; Service</h2>
@@ -268,84 +369,6 @@
           </ul>
         </div>
       </div>
-    </section>
-
-    <!-- HONORS -->
-    <section id="honors" class="section wrap">
-      <h2>Honors and Awards</h2>
-      <ul class="honors">
-        <li>
-          <span class="when">2026</span>
-          <div><span class="role">Rackham Travel Grant</span><span class="org">Rackham Graduate School, University of Michigan</span></div>
-        </li>
-        <li>
-          <span class="when">2024</span>
-          <div>
-            <span class="role">Finalist, Optimization Grand Challenge</span>
-            <span class="org">Korean Institute of Industrial Engineers. Ranked 4th of more than 370 teams in the first round for an offline vehicle-sharing combinatorial optimization algorithm for food delivery.</span>
-          </div>
-        </li>
-        <li>
-          <span class="when">2024</span>
-          <div>
-            <span class="role">Lee Joong-Han Award, Academic Sector</span>
-            <span class="org">Seoul National University. Awarded annually to one student for academic and research excellence in Industrial Engineering.</span>
-          </div>
-        </li>
-        <li>
-          <span class="when">2023</span>
-          <div><span class="role">Finalist, Space Weather Prediction AI Competition</span><span class="org">National Korea Space Center</span></div>
-        </li>
-        <li>
-          <span class="when">2021–2024</span>
-          <div>
-            <span class="role">Kwanjeong Undergraduate Fellowship (2022–2024); SNU Women in Engineering Science Scholarship (2022); Merit-Based Scholarship (2021)</span>
-            <span class="org">Seoul National University</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- BACKGROUND -->
-    <section id="background" class="section wrap">
-      <h2>Background</h2>
-      <ul class="timeline">
-        <li>
-          <span class="when">2025–</span>
-          <div>
-            <span class="role">Ph.D. student, Industrial and Operations Engineering</span>
-            <span class="org">University of Michigan, Ann Arbor · Advisor: Prof. Siqian Shen</span>
-          </div>
-        </li>
-        <li>
-          <span class="when">2025</span>
-          <div>
-            <span class="role">Optimization Engineer, Omelet</span>
-            <span class="org">Seoul · Jan–Jul 2025. Optimization algorithms for demand forecasting and inventory-control decision support for a major convenience-store client.</span>
-          </div>
-        </li>
-        <li>
-          <span class="when">2023–</span>
-          <div>
-            <span class="role">Research Assistant, Seoul National University</span>
-            <span class="org">Advisor: Prof. Taesup Moon · Deep learning for battery remaining-useful-life prediction.</span>
-          </div>
-        </li>
-        <li>
-          <span class="when">2023</span>
-          <div>
-            <span class="role">Research Assistant, Seoul National University</span>
-            <span class="org">Advisor: Prof. Sungzoon Cho · Clustering-based framework for categorical-variable selection in manufacturing data.</span>
-          </div>
-        </li>
-        <li>
-          <span class="when">2020–2025</span>
-          <div>
-            <span class="role">B.S. in Industrial Engineering and B.S. in Artificial Intelligence</span>
-            <span class="org">Seoul National University · Ranked first in Industrial Engineering.</span>
-          </div>
-        </li>
-      </ul>
     </section>
 
     <!-- CV -->

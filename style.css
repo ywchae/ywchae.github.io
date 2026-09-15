@@ -147,7 +147,7 @@ main { grid-column: 2; }
   max-width: var(--measure);
   margin-bottom: var(--s-3);
 }
-.bio { max-width: var(--measure); color: var(--ink-2); }
+.bio { max-width: var(--measure); color: var(--ink-2); font-size: 1.0625rem; margin-top: 0.5rem; }
 .bio p { margin-bottom: var(--s-2); }
 
 .contact {
@@ -274,7 +274,6 @@ h3.group {
   border-top: 1px solid var(--rule);
   max-width: 80ch;
 }
-.talks li:last-child, .honors li:last-child, .timeline li:last-child { border-bottom: 1px solid var(--rule); }
 .when {
   color: var(--ink-3); font-variant-numeric: tabular-nums; font-weight: 500;
   padding-top: 0.15rem; white-space: nowrap;
@@ -282,6 +281,7 @@ h3.group {
 .talks .pub-title { font-size: 1rem; }
 .role { display: block; font-weight: 600; }
 .org { display: block; color: var(--ink-2); }
+.meta { display: block; color: var(--accent-ink); font-weight: 500; font-variant-numeric: tabular-nums; margin-top: 0.15rem; }
 .roles li { margin-bottom: var(--s-3); }
 .roles p { color: var(--ink-2); margin-top: 0.35rem; }
 
